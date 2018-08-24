@@ -1,0 +1,13 @@
+<view class="flex-wrp">
+  <block a:for="{{listArray}}" >
+    <view class="flex-item" key="{{item.id}}">
+      <view class='game-content-box'  data-item="{{item}}">
+        <navigator url="../list/index?id={{item.id}}&name={{item.name}}" hover-class="navigator-hover">
+           <image src="{{item.icon}}"></image>
+           <text>{{item.name}}</text>
+         </navigator>
+       </view>
+    </view>
+  </block>
+</view> 
+  

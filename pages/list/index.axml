@@ -1,0 +1,19 @@
+<view class="list-type">
+  <view class='home-first-warp'>
+    <view class='information'>
+      <block a:for="{{listArray}}">
+        <view class='data' key="{{item.room.id}}" data-index='{{item}}' onTap="passRoomId">
+          <image class='img' src='{{item.snapshot}}'></image>
+          <view class='footer'>
+            <image src='{{item.room.avatar}}'></image>
+            <view class='message'>
+              <view class='type'>{{item.room.name}}</view>
+              <view class='type type-bottom'>{{item.room.title}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="loading-more" onTap="loadingMore" a:if="{{prompt}}">{{prompt}}</view>
+</view>

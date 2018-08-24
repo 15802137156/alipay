@@ -1,0 +1,39 @@
+<view class="home">
+  <swiper indicator-dots="true" autoplay="ture" interval="1000" duration="500" circular="true" class="banner">
+    <block a:for="{{imgUrls}}">
+      <swiper-item key="{{item.id}}">
+        <image src="{{item.image}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='home-first-warp' a:for="{{typeArray}}" key="{{item.rooms}}">
+    <view class='title' data-index='{{item}}' onTap="pageJump">
+      <view>
+        <image class='left-ico' src='{{item.icon}}'></image>
+        <text class='name'>{{item.name}}</text>
+      </view>
+      <image class='right-ico' src='../images/right.png'></image>
+    </view>
+    <view class='information'>
+      <block a:for="{{item.streams}}" >
+        <view class='data' data-index='{{item}}' key="{{item.room.id}}" onTap="passRoomId">
+          <image class='img' src='{{item.snapshot}}'></image>
+          <view class='footer'>
+            <image src='{{item.room.avatar}}'></image>
+            <view class='message'>
+              <view class='type'>{{item.room.name}}</view>
+              <view class='type type-bottom'>{{item.room.title}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <swiper indicator-dots="true" autoplay="ture" interval="1000" duration="500" circular="true" vertical="true" class="banner">
+    <block a:for="{{adsArray}}">
+      <swiper-item key="{{item.id}}">
+        <image src="{{item.image}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

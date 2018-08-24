@@ -1,0 +1,41 @@
+<view class="sport">
+  <view class="sport-swpier">
+    <view class="swiper-container">
+      <scroll-view class="swiper-wrapper" scroll-x="{{true}}">
+        <block a:for="{{swiperArray}}">
+          <view class="swiper-slide" key="{{item.target}}" data-target="{{item}}" data-index="{{index}}" onTap="sportType">
+            <image src={{item.image}} />
+            <view class="span {{tab === index ?'active':''}}">{{item.name}}</view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="sportschedule-box">
+    <block a:for="{{sportList}}">
+      <view class="sportschedule-time" key={item.id}>{{item.start}}</view>
+        <view class="sportschedule-card" key={item.matchId}>
+          <view class="card-bd">
+            <view class="card-team-info">
+              <view class="sport-title ellipsis">{{item.leagueName}}-{{item.roundName}}</view>
+              <view class="sport-team">
+                <image src={{item.teamALogo}} />
+                <view class="span">{{item.teamAName}}</view>
+              </view>
+              <view class="sport-team">
+                <image src={{item.teamBLogo}} />
+                <view class="span">{{item.teamBName}}</view>
+              </view>
+            </view>
+            <view class="card-room-info">
+              <view class="btn-appointment">
+                <image src={{item.topRecommend.roomLogo}} />
+                <view class="span">预约</view>
+              </view>
+            </view>
+          </view>
+      </view>
+    </block>
+  </view>
+  <view class="no-data" a:if="{{sportList.length === 0 && tab > 0}}">暂无比赛</view>
+</view>

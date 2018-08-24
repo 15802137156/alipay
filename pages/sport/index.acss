@@ -1,0 +1,149 @@
+.sport-swpier {
+  padding: 20px 15px;
+  height: 100px;
+  background: #fff;
+}
+
+.swiper-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-property: transform,-webkit-transform;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.sport-swpier .swiper-slide {
+  width: 60px;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.sport-swpier a {
+  display: block;
+  height: 100%;
+  width: 60px;
+}
+
+.sport-swpier image {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.sport-swpier .span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sportschedule-box {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sportschedule-time {
+  margin: 10px 0;
+  height: 30px;
+  padding: 0px 15px;
+  line-height: 30px;
+}
+
+.sportschedule-card {
+  padding: 0px 15px;
+  margin-bottom: 5px;
+}
+
+.card-bd {
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+}
+
+.card-team-info {
+  width: 180px;
+  padding: 0 10px;
+}
+
+.sport-title {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  height: 24px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.sport-team {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  margin: 13px 0;
+}
+
+.sport-team image {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.sport-team .span {
+  line-height: 36px;
+  margin-left: 15px;
+}
+
+.card-room-info {
+  margin: 10px 0;
+  width: 140px;
+  height: 130px;
+  border-left: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-appointment {
+  height: 30px;
+  width: 60px;
+  border: 1px solid #09f;
+  color: #09f;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.btn-appointment image {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.sport-swpier .active.span {
+  color: #ff7e00;
+}
+
+.sport .no-data {
+  text-align: center;
+  font-size: 25px;
+  line-height: 100px;
+  color: #666;
+}

@@ -1,0 +1,21 @@
+<view class='home-first-warp' a:for="{{listArray}}" key="{{item.id}}">
+  <view class='title' data-index='{{item}}' onTap="pageJump">
+    <view>
+      <image class='left-ico' src='{{item.icon}}'></image>
+      <text class='name'>{{item.name}}</text>
+    </view>
+    <image class='right-ico' src='../images/right.png'></image>
+  </view>
+  <view class='information'>
+    <view class='data'a:for="{{item.streams}}" key="{{item.room.id}}" data-index='{{item}}' onTap="passRoomId">
+      <image class='img' src='{{item.snapshot}}'></image>
+      <view class='footer'>
+        <image src='{{item.room.avatar}}'></image>
+        <view class='message'>
+          <view class='type'>{{item.room.name}}</view>
+          <view class='type type-bottom'>{{item.room.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

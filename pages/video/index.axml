@@ -1,0 +1,13 @@
+<view class="video-container">
+  <video class="video" id="myVideo" src="{{videoUrl}}" enable-danmu danmu-btn  autoplay page-gesture></video>   
+  <view class="chat-foot">
+    <view class="chat-foot-l">
+      <view class='chat-input-box'>
+        <image class='emoj-img' src='../images/emoji.png'></image>
+        <input onInput="bindInputBlur" value='{{inputValue}}' placeholder="一起来愉快的聊天吧~" class='chat-input'/>
+      </view>
+    </view>
+    <view onTap="bindSendDanmu" class='send-msg'>发送</view> 
+  </view>
+</view>
+  

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/game/index",
+    "pages/play/index",
+    "pages/sport/index",
+    "pages/list/index",
+    "pages/video/index"
+  ],
+  "window": {
+    "defaultTitle": "龙珠直播",
+    "titleBarColor": "#ff7e00"
+  },
+  "tabBar": {
+    "textColor": "#ccc",
+    "selectedColor": "#ff7e00",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "直播",
+        "icon": "pages/images/live.png",
+        "activeIcon": "pages/images/live-active.png"
+      },
+      {
+        "pagePath": "pages/game/index",
+        "name": "游戏",
+        "icon": "pages/images/game.png",
+        "activeIcon": "pages/images/game-active.png"
+      },
+      {
+        "pagePath": "pages/play/index",
+        "name": "娱乐",
+        "icon": "pages/images/play.png",
+        "activeIcon": "pages/images/play-active.png"
+      },
+      {
+        "pagePath": "pages/sport/index",
+        "name": "娱乐",
+        "icon": "pages/images/sport.png",
+        "activeIcon": "pages/images/sport-active.png"
+      }
+    ]
+  }
+}

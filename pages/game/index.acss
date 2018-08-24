@@ -1,0 +1,27 @@
+.flex-wrp{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40rpx;
+}
+.flex-item{
+  width: 33.3%;
+  height: 250rpx;
+}
+.game-content-box{
+  width: 120rpx;
+  margin: 0 auto;
+  margin-bottom: 60rpx;
+}
+.game-content-box image{
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+}
+.game-content-box text{
+  text-align: center;
+  font-size: 30rpx;
+  display: block;
+  width: 100%;
+  margin-top: 10rpx;
+}
